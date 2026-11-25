@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: macos-14 # arm64 host == arm64 target; different OS/sysroot
+    runs-on: macos-15
     timeout-minutes: 120
     env:
       NODE_REF: ${{ github.event.inputs.node_ref || 'v22.19.0' }}
